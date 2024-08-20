@@ -19,3 +19,13 @@ addTwo(5);
 addTwo1(5);
 upperCase("5");
 loginUser(true);
+var heroes = ["Batman", "Superman", "Spiderman"];
+heroes.map(function (hero) {
+    return "hero is ".concat(hero);
+});
+function errMsg(err) {
+    console.log(err);
+}
+function errMessage(msg) {
+    throw new Error(msg); // used never because it will never return anything
+}

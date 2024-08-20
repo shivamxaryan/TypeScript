@@ -21,4 +21,18 @@ addTwo1(5);
 upperCase("5");
 loginUser(true);
 
+const heroes = ["Batman", "Superman", "Spiderman"];
+
+heroes.map((hero): string => {
+    return `hero is ${hero}`;
+})
+
+function errMsg(err: string): void {
+    console.log(err);
+}
+
+function errMessage (msg: string): never {
+    throw new Error(msg);  // used never because it will never return anything
+}
+
 export {};
